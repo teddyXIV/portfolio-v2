@@ -8,23 +8,26 @@ import Stack from '@mui/material/Stack';
 import './Projects.css'
 import { CardActionArea } from '@mui/material';
 import Link from '@mui/material/Link';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 const Projects = () => {
     return (
         <>
+
+            <h2>Projects</h2>
             <Card className='project-card' sx={{ minWidth: 275, display: 'flex' }}>
                 <CardActionArea component={Link} href="https://github.com/teddyXIV/react-api-recipes.git" target='_blank'>
                     <Box sx={{ display: 'flex', flexDirection: 'row' }}>
                         <CardContent>
                             <Typography variant="h5" component="div">
                                 React + APIs
+                                <ArrowOutwardIcon fontSize='small' />
                             </Typography>
                             <Typography variant="body2">
                                 A web app exploring the implementation of APIs with React
                             </Typography>
                             <Stack direction="row" spacing={1}>
                                 <Chip label="React" />
-                                <Chip label="Vite" />
                                 <Chip label="MUI" />
                                 <Chip label="API calls" />
                             </Stack>
@@ -44,6 +47,7 @@ const Projects = () => {
                         <CardContent>
                             <Typography variant="h5" component="div">
                                 Inventory Tracker
+                                <ArrowOutwardIcon fontSize='small' />
                             </Typography>
                             <Typography variant="body2">
                                 A inventory tracking app for a fictional surf shop.
@@ -52,12 +56,11 @@ const Projects = () => {
                                 <Chip label="React" />
                                 <Chip label="Redux Toolkit" />
                                 <Chip label="TypeScript" />
-                                <Chip label="Vite" />
                             </Stack>
                         </CardContent>
                         <CardMedia
                             component="img"
-                            sx={{ width: 200 }}
+                            sx={{ width: 175 }}
                             image="src\assets\redux_inventory.png"
                             alt="the front page of my React + API project"
                         />
@@ -70,6 +73,7 @@ const Projects = () => {
                         <CardContent>
                             <Typography variant="h5" component="div">
                                 Currency exchanger
+                                <ArrowOutwardIcon fontSize='small' />
                             </Typography>
                             <Typography variant="body2">
                                 An application that allows the user to enter a currency and convert it into another currency at the current exchange rate.
@@ -77,13 +81,12 @@ const Projects = () => {
                             <Stack direction="row" spacing={1}>
                                 <Chip label="JavaScript" />
                                 <Chip label="API calls" />
-                                <Chip label="Vite" />
                                 <Chip label="Bootstrap" />
                             </Stack>
                         </CardContent>
                         <CardMedia
                             component="img"
-                            sx={{ width: 200 }}
+                            sx={{ width: 175 }}
                             image="src\assets\currency_api.png"
                             alt="the front page of my React + API project"
                         />

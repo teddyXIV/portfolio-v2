@@ -4,7 +4,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import './Experience.css'
 
 
 
@@ -15,8 +16,13 @@ const Experience = () => {
         (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
             setExpanded(isExpanded ? panel : false);
         };
+
+    const navigateTo = () => {
+        window.open("https://drive.google.com/file/d/1ohn47Hiib52ON-tUazpYS53XV1Bfereh/view?usp=drive_link", "_blank")
+    }
     return (
         <>
+            <h2>Experience</h2>
             <div>
                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary
@@ -112,9 +118,12 @@ const Experience = () => {
                     </AccordionDetails>
                 </Accordion>
             </div>
-            <Button variant="outlined" href="https://drive.google.com/file/d/1ohn47Hiib52ON-tUazpYS53XV1Bfereh/view?usp=drive_link" target="_blank">
-                View resume
-            </Button>
+            <div className="resume-button">
+                <button onClick={() => navigateTo()}>
+                    View resume
+                    <ArrowOutwardIcon fontSize='small' />
+                </button>
+            </div>
         </>
     )
 }
