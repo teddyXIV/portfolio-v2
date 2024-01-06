@@ -8,10 +8,14 @@ function App() {
 
   return (
     <>
-      <Header />
-      <AboutMe />
-      <Experience />
-      <Projects />
+      <div className="personal">
+        <Header />
+        <AboutMe />
+      </div>
+      <div className="professional">
+        <Experience />
+        <Projects />
+      </div>
     </>
   )
 }
