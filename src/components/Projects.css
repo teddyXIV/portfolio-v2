@@ -1,3 +1,8 @@
 .project-card {
     margin: 10px;
 }
+
+.project-card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
