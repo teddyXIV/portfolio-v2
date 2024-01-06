@@ -1,128 +1,67 @@
-import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Typography from '@mui/material/Typography';
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import './Experience.css'
 
-
-
 const Experience = () => {
-    const [expanded, setExpanded] = React.useState<string | false>(false);
-
-    const handleChange =
-        (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-            setExpanded(isExpanded ? panel : false);
-        };
-
-    const navigateTo = () => {
-        window.open("https://drive.google.com/file/d/1ohn47Hiib52ON-tUazpYS53XV1Bfereh/view?usp=drive_link", "_blank")
-    }
     return (
         <>
             <h2>Experience</h2>
-            <div>
-                <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1bh-content"
-                        id="panel1bh-header"
-                    >
-                        <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                            Member experience specialist
-                        </Typography>
-                        <Typography sx={{ color: 'text.secondary' }}>Wild Alaskan Company - 2021-2023</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                            Aliquam eget maximus est, id dignissim quam.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel2bh-content"
-                        id="panel2bh-header"
-                    >
-                        <Typography sx={{ width: '33%', flexShrink: 0 }}>Biological science assistant</Typography>
-                        <Typography sx={{ color: 'text.secondary' }}>
-                            Oregon Dept. of Fish and Wildlife - 2021
-                        </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
-                            varius pulvinar diam eros in elit. Pellentesque convallis laoreet
-                            laoreet.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel3bh-content"
-                        id="panel3bh-header"
-                    >
-                        <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                            Habitat specialist
-                        </Typography>
-                        <Typography sx={{ color: 'text.secondary' }}>
-                            Ash Creek Forest Management - 2020-2021
-                        </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-                            amet egestas eros, vitae egestas augue. Duis vel est augue.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel4bh-content"
-                        id="panel4bh-header"
-                    >
-                        <Typography sx={{ width: '33%', flexShrink: 0 }}>Experimental biology aide</Typography>
-                        <Typography sx={{ color: 'text.secondary' }}>
-                            Oregon Dept. of Fish and Wildlife - 2019
-                        </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-                            amet egestas eros, vitae egestas augue. Duis vel est augue.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel4bh-content"
-                        id="panel4bh-header"
-                    >
-                        <Typography sx={{ width: '33%', flexShrink: 0 }}>North Pacific Groundfish Observer</Typography>
-                        <Typography sx={{ color: 'text.secondary' }}>
-                            Saltwater, Inc. - 2018-2019
-                        </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-                            amet egestas eros, vitae egestas augue. Duis vel est augue.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+            <div className="job-container">
+                <div className="years">
+                    <h3>2021 - 2023</h3>
+                </div>
+                <div className="job-description">
+                    <h3>Member experience specialist - Wild Alaskan Company</h3>
+                    <p>
+                        Ensured members' logistical needs were covered by carefully checking orders and giving the green light to the MX department for final approval before fulfillment. Juggled 50-80 customer accounts daily, ensuring their satisfaction. Managed internal training on Alaska's commercial marine species.
+                    </p>
+                </div>
             </div>
-            <div className="resume-button">
-                <button onClick={() => navigateTo()}>
-                    View resume
-                    <ArrowOutwardIcon fontSize='small' />
-                </button>
+            <hr />
+            <div className="job-container">
+                <div className="years">
+                    <h3>2021</h3>
+                </div>
+                <div className="job-description">
+                    <h3>Biological science assistant - Oregon Dept. of Fish & Wildlife</h3>
+                    <p>
+                        Identified threatened steelhead trout and nests in backcountry rivers and record locations with GIS software. Planned strategies and safety measures for remote surveys. Communicated monitoring goals to landowners for access.
+                    </p>
+                </div>
+            </div >
+            <hr />
+            <div className="job-container">
+                <div className="years">
+                    <h3>2020 - 2021</h3>
+                </div>
+                <div className="job-description">
+                    <h3>Habitat specialist - Ash Creek Forest Management</h3>
+                    <p>
+                        Used ArcGIS for mapping restoration work progress, areas of concern, and relevant information. Managed dynamic project needs and goals, including logistics, equipment, plant, and chemical requirements, while efficiently delegating tasks to ensure project success.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div className="job-container">
+                <div className="years">
+                    <h3>2019</h3>
+                </div>
+                <div className="job-description">
+                    <h3>Experimental biology aide - Oregon Dept. of Fish & Wildlife</h3>
+                    <p>
+                        Collaborated with commercial and tribal fishing operations to gather biological and population data on salmon runs. Built positive relationships within fishing communities as an ODFW representative and subject matter expert. Assessed fishing efforts in the Willamette, Clackamas, and Columbia rivers
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div className="job-container">
+                <div className="years">
+                    <h3>2018 - 2019</h3>
+                </div>
+                <div className="job-description">
+                    <h3>North Pacific Groundfish Observer - Saltwater, Inc.</h3>
+                    <p>
+                        Managed the observation and sampling of 10+ metric tons of wild-caught fish per hour on a fishing vessel at sea. Coordinated with crews in a dangerous environment, recorded precise data, and applied expertise in commercial fishing regulations. Contributed to and error-checked the NOAA fisheries database.
+                    </p>
+                </div>
             </div>
         </>
     )

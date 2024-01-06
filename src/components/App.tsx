@@ -1,6 +1,6 @@
 import Header from './Header'
 import './App.css'
-import Experience2 from './Experience2'
+import Experience from './Experience'
 import Projects from './Projects'
 import AboutMe from './AboutMe'
 
@@ -14,7 +14,7 @@ function App() {
       <div className="professional">
         <AboutMe />
         <Projects />
-        <Experience2 />
+        <Experience />
       </div>
     </>
   )
