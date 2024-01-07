@@ -1,12 +1,17 @@
 .project-container {
-    margin-bottom: 10%;
+    margin-bottom: 50px;
 }
 
 .project-card {
-    margin: 10px;
+    margin: 20px;
 }
 
 .project-card:hover {
     transform: scale(1.02);
     cursor: pointer;
+    border: 3px solid #a1cdf1;
 }
+
+/* .card-pic {
+    margin-right: 0;
+} */
