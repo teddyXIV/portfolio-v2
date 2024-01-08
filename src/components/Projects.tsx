@@ -22,6 +22,16 @@ const Projects = () => {
         }
     }
 
+    const arrowStyle = {
+        marginLeft: '10px',
+        marginBottom: '5px'
+    }
+
+    const mediaStyle = {
+        width: 175,
+        marginLeft: 'auto'
+    }
+
     return (
         <>
             <div className="project-container">
@@ -32,20 +42,20 @@ const Projects = () => {
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     React + APIs
-                                    <ArrowOutwardIcon fontSize='medium' sx={{ marginLeft: '10px', marginBottom: '5px' }} />
+                                    <ArrowOutwardIcon fontSize='medium' sx={arrowStyle} />
                                 </Typography>
                                 <Typography variant="body2">
                                     A web app exploring the implementation of APIs with React.
                                 </Typography>
                                 <Stack direction="row" spacing={1}>
-                                    <Chip label="React" />
-                                    <Chip label="MUI" />
-                                    <Chip label="API calls" />
+                                    <Chip label="React" sx={{ background: '#e07a5f', color: "#203623" }} />
+                                    <Chip label="MUI" sx={{ background: '#593F62', color: "#FBF2C0" }} />
+                                    <Chip label="API calls" sx={{ background: '#06BA63', color: "#203623" }} />
                                 </Stack>
                             </CardContent>
                             <CardMedia
                                 component="img"
-                                sx={{ width: 175, marginLeft: 'auto' }}
+                                sx={mediaStyle}
                                 image="src\assets\react_api.png"
                                 alt="the front page of my React + API project"
 
@@ -59,48 +69,46 @@ const Projects = () => {
                             <CardContent >
                                 <Typography variant="h5" component="div">
                                     Inventory Tracker
-                                    <ArrowOutwardIcon fontSize='medium' sx={{ marginLeft: '10px', marginBottom: '5px' }} />
+                                    <ArrowOutwardIcon fontSize='medium' sx={arrowStyle} />
                                 </Typography>
                                 <Typography variant="body2">
                                     A inventory tracking app for a fictional surf shop utilizing Redux Toolkit for state management.
                                 </Typography>
                                 <Stack direction="row" spacing={1}>
-                                    <Chip label="React" />
-                                    <Chip label="Redux Toolkit" />
-                                    <Chip label="TypeScript" />
+                                    <Chip label="React" sx={{ background: '#e07a5f' }} />
+                                    <Chip label="Redux Toolkit" sx={{ background: '#3F0D12', color: "#FBF2C0" }} />
+                                    <Chip label="TypeScript" sx={{ background: '#0B1D51', color: "#FBF2C0" }} />
                                 </Stack>
                             </CardContent>
-                            <div className="card-pic">
-                                <CardMedia
-                                    component="img"
-                                    sx={{ width: 175, marginLeft: 'auto' }}
-                                    image="src\assets\redux_inventory.png"
-                                    alt="the front page of my Inventory Tracker project"
-                                />
-                            </div>
+                            <CardMedia
+                                component="img"
+                                sx={mediaStyle}
+                                image="src\assets\redux_inventory.png"
+                                alt="the front page of my Inventory Tracker project"
+                            />
                         </Box>
                     </CardActionArea>
                 </Card>
                 <Card className='project-card' sx={cardStyle}>
                     <CardActionArea component={Link} href="https://github.com/teddyXIV/Currency-Exchanger.git" target='_blank'>
-                        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+                        <Box sx={{ display: 'flex' }}>
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     Currency exchanger
-                                    <ArrowOutwardIcon fontSize='medium' sx={{ marginLeft: '10px', marginBottom: '5px' }} />
+                                    <ArrowOutwardIcon fontSize='medium' sx={arrowStyle} />
                                 </Typography>
                                 <Typography variant="body2">
                                     An application that allows the user to enter a currency and convert it into another currency at the current exchange rate.
                                 </Typography>
                                 <Stack direction="row" spacing={1}>
-                                    <Chip label="JavaScript" />
-                                    <Chip label="API calls" />
-                                    <Chip label="Bootstrap" />
+                                    <Chip label="JavaScript" sx={{ background: '#BA5C12', color: "#203623" }} />
+                                    <Chip label="API calls" sx={{ background: '#06BA63', color: "#203623" }} />
+                                    <Chip label="Bootstrap" sx={{ background: '#FC6471', color: "#203623" }} />
                                 </Stack>
                             </CardContent>
                             <CardMedia
                                 component="img"
-                                sx={{ width: 175, marginLeft: 'auto' }}
+                                sx={mediaStyle}
                                 image="src\assets\currency_api.png"
                                 alt="the front page of my Currency Exchange project"
                             />
