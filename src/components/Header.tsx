@@ -19,10 +19,10 @@ const Header = () => {
                 <h3>Full stack developer</h3>
                 <div>
                     <Link href="https://github.com/teddyXIV" target="_blank" sx={linkStyle}>
-                        <GitHubIcon />
+                        <GitHubIcon fontSize="large" />
                     </Link>
                     <Link href="https://www.linkedin.com/in/teddy-peterschmidt/" target="_blank" sx={linkStyle}>
-                        <LinkedInIcon />
+                        <LinkedInIcon fontSize="large" />
                     </Link>
                 </div>
             </div>

@@ -12,20 +12,30 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 const Projects = () => {
 
+    const cardStyle = {
+        minWidth: 275,
+        display: 'flex',
+        background: "#FBF2C0",
+        color: "#203623",
+        '&:hover': {
+            background: "#a1cdf1"
+        }
+    }
+
     return (
         <>
             <div className="project-container">
                 <h2>Projects</h2>
-                <Card className='project-card' sx={{ minWidth: 275, display: 'flex' }}>
+                <Card className='project-card' sx={cardStyle}>
                     <CardActionArea component={Link} href="https://github.com/teddyXIV/react-api-recipes.git" target='_blank'>
                         <Box sx={{ display: 'flex' }}>
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     React + APIs
-                                    <ArrowOutwardIcon fontSize='small' />
+                                    <ArrowOutwardIcon fontSize='medium' sx={{ marginLeft: '10px', marginBottom: '5px' }} />
                                 </Typography>
                                 <Typography variant="body2">
-                                    A web app exploring the implementation of APIs with React
+                                    A web app exploring the implementation of APIs with React.
                                 </Typography>
                                 <Stack direction="row" spacing={1}>
                                     <Chip label="React" />
@@ -43,13 +53,13 @@ const Projects = () => {
                         </Box>
                     </CardActionArea>
                 </Card>
-                <Card className='project-card' sx={{ minWidth: 275, display: 'flex' }}>
+                <Card className='project-card' sx={cardStyle}>
                     <CardActionArea component={Link} href="https://github.com/teddyXIV/redux-inventory-tracker.git" target='_blank'>
                         <Box sx={{ display: 'flex' }}>
                             <CardContent >
                                 <Typography variant="h5" component="div">
                                     Inventory Tracker
-                                    <ArrowOutwardIcon fontSize='small' />
+                                    <ArrowOutwardIcon fontSize='medium' sx={{ marginLeft: '10px', marginBottom: '5px' }} />
                                 </Typography>
                                 <Typography variant="body2">
                                     A inventory tracking app for a fictional surf shop utilizing Redux Toolkit for state management.
@@ -71,13 +81,13 @@ const Projects = () => {
                         </Box>
                     </CardActionArea>
                 </Card>
-                <Card className='project-card' sx={{ minWidth: 275, display: 'flex' }}>
+                <Card className='project-card' sx={cardStyle}>
                     <CardActionArea component={Link} href="https://github.com/teddyXIV/Currency-Exchanger.git" target='_blank'>
                         <Box sx={{ display: 'flex', flexDirection: 'row' }}>
                             <CardContent>
                                 <Typography variant="h5" component="div">
                                     Currency exchanger
-                                    <ArrowOutwardIcon fontSize='small' />
+                                    <ArrowOutwardIcon fontSize='medium' sx={{ marginLeft: '10px', marginBottom: '5px' }} />
                                 </Typography>
                                 <Typography variant="body2">
                                     An application that allows the user to enter a currency and convert it into another currency at the current exchange rate.

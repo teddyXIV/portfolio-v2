@@ -4,14 +4,9 @@
 
 .project-card {
     margin: 20px;
+    margin-left: 0;
 }
 
 .project-card:hover {
     transform: scale(1.02);
-    cursor: pointer;
-    border: 3px solid #a1cdf1;
 }
-
-/* .card-pic {
-    margin-right: 0;
-} */

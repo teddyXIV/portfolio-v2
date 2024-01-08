@@ -1,9 +1,26 @@
 import './Experience.css'
+import Button from '@mui/material/Button';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 const Experience = () => {
+
+    const resumeButtonStyle = {
+        color: '#203623',
+        background: "#FBF2C0",
+        '&:hover': {
+            background: "#a1cdf1"
+        }
+
+    }
     return (
         <>
-            <h2>Experience</h2>
+            <div>
+                <h2>Experience</h2>
+                <Button variant="contained" href="https://drive.google.com/file/d/1ohn47Hiib52ON-tUazpYS53XV1Bfereh/view?usp=sharing" target="_blank" sx={resumeButtonStyle}>
+                    View full resume
+                    <ArrowOutwardIcon fontSize='small' sx={{ marginLeft: '10px', marginBottom: '5px' }} />
+                </Button>
+            </div >
             <div className="job-container">
                 <div className="years">
                     <h3>2021 - 2023</h3>
