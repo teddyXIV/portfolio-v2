@@ -47,10 +47,10 @@ const Projects = () => {
                                 <Typography variant="body2">
                                     A web app exploring the implementation of APIs with React.
                                 </Typography>
-                                <Stack direction="row" spacing={1}>
-                                    <Chip label="React" sx={{ background: '#e07a5f', color: "#203623" }} />
+                                <Stack direction="row" spacing={1} sx={{ paddingTop: '10px' }}>
+                                    <Chip label="React" sx={{ background: '#e07a5f', color: "#FBF2C0" }} />
                                     <Chip label="MUI" sx={{ background: '#593F62', color: "#FBF2C0" }} />
-                                    <Chip label="API calls" sx={{ background: '#06BA63', color: "#203623" }} />
+                                    <Chip label="API calls" sx={{ background: '#06BA63', color: "#FBF2C0" }} />
                                 </Stack>
                             </CardContent>
                             <CardMedia
@@ -74,8 +74,8 @@ const Projects = () => {
                                 <Typography variant="body2">
                                     A inventory tracking app for a fictional surf shop utilizing Redux Toolkit for state management.
                                 </Typography>
-                                <Stack direction="row" spacing={1}>
-                                    <Chip label="React" sx={{ background: '#e07a5f' }} />
+                                <Stack direction="row" spacing={1} sx={{ paddingTop: '10px' }}>
+                                    <Chip label="React" sx={{ background: '#e07a5f', color: "#FBF2C0" }} />
                                     <Chip label="Redux Toolkit" sx={{ background: '#3F0D12', color: "#FBF2C0" }} />
                                     <Chip label="TypeScript" sx={{ background: '#0B1D51', color: "#FBF2C0" }} />
                                 </Stack>
@@ -100,10 +100,10 @@ const Projects = () => {
                                 <Typography variant="body2">
                                     An application that allows the user to enter a currency and convert it into another currency at the current exchange rate.
                                 </Typography>
-                                <Stack direction="row" spacing={1}>
-                                    <Chip label="JavaScript" sx={{ background: '#BA5C12', color: "#203623" }} />
-                                    <Chip label="API calls" sx={{ background: '#06BA63', color: "#203623" }} />
-                                    <Chip label="Bootstrap" sx={{ background: '#FC6471', color: "#203623" }} />
+                                <Stack direction="row" spacing={1} sx={{ paddingTop: '10px' }}>
+                                    <Chip label="JavaScript" sx={{ background: '#BA5C12', color: "#FBF2C0" }} />
+                                    <Chip label="API calls" sx={{ background: '#06BA63', color: "#FBF2C0" }} />
+                                    <Chip label="Bootstrap" sx={{ background: '#FC6471', color: "#FBF2C0" }} />
                                 </Stack>
                             </CardContent>
                             <CardMedia

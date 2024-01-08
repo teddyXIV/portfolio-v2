@@ -34,3 +34,15 @@ body {
     background-color: transparent;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .personal {
+    /* float: right; */
+    width: 100%;
+  }
+
+  .professional {
+    /* float: left; */
+    width: 100%;
+  }
+}

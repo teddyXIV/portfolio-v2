@@ -9,7 +9,8 @@ const Experience = () => {
         background: "#FBF2C0",
         '&:hover': {
             background: "#a1cdf1"
-        }
+        },
+        fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif'
 
     }
     return (
